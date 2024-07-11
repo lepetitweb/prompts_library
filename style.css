@@ -1,0 +1,202 @@
+body {
+    width: 750px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 15px;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#searchBar {
+    width: 75%;
+    margin-right: 5px;
+}
+
+#addButton {
+    width: 22%;
+}
+
+.promptItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+}
+
+.promptItem:hover {
+    background-color: #ecf0f1;
+}
+
+.promptContent {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.promptTitle {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+.promptPreview {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.promptActions {
+    display: flex;
+    align-items: center;
+}
+
+.copyIcon {
+    color: #7f8c8d;
+    cursor: pointer;
+    transition: color 0.2s;
+    font-size: 16px;
+}
+
+.copyIcon:hover {
+    color: #34495e;
+}
+
+#promptList {
+    margin-top: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.copyIcon {
+    color: #7f8c8d;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.copyIcon:hover {
+    color: #34495e;
+}
+
+#promptList {
+    margin-top: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#promptDetail {
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#tagInput {
+    width: 70%;
+    margin-right: 5px;
+}
+
+#tagList {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#savePromptButton {
+    background-color: #2ecc71;
+    margin-right: 10px;
+}
+
+#savePromptButton:hover {
+    background-color: #27ae60;
+}
+
+#cancelButton {
+    background-color: #3a1492;
+}
+
+#cancelButton:hover {
+    background-color: #3a1492;
+}
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#savePromptButton,
+#cancelButton,
+#deletePromptButton {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#deletePromptButton {
+    background-color: #e74c3c;
+    margin-right: 0;
+}
+
+#deletePromptButton:hover {
+    background-color: #c0392b;
+}
+
+
+.copyIcon,
+.pasteIcon {
+    color: #7f8c8d;
+    cursor: pointer;
+    transition: color 0.2s;
+    margin-left: 5px;
+}
+
+.copyIcon:hover,
+.pasteIcon:hover {
+    color: #34495e;
+}

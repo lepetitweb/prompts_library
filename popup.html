@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prompt Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mainView">
+        <input type="text" id="searchBar" placeholder="Rechercher...">
+        <button id="addButton">Ajouter</button>
+        <button id="exportButton">Exporter JSON</button>
+        <button id="importButton">Importer JSON</button>
+        <input type="file" id="fileInput" style="display: none;">
+        <div id="promptList"></div>
+    </div>
+    <div id="promptDetail">
+        <h2 id="detailTitle">Ajouter/Éditer Prompt</h2>
+        <input type="text" id="promptTitle" placeholder="Titre du prompt">
+        <textarea id="promptText" rows="5" placeholder="Contenu du prompt"></textarea>
+        <input type="text" id="tagInput" placeholder="Ajouter un tag">
+        <button id="addTagButton">Ajouter Tag</button>
+        <div id="tagList"></div>
+        <div class="button-group">
+            <button id="savePromptButton">Sauvegarder</button>
+            <button id="cancelButton">Annuler</button>
+            <button id="deletePromptButton" class="delete-button">Supprimer</button>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
